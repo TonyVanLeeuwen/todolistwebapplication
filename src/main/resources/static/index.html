@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dagplanner</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+        <form action="/add" method="POST">
+            <h1 class="item-on-top">Wat gaan we doen vandaag?</h1>
+        <div class="item">
+            <label for="toDo">Taak</label>
+            <input name="toDo" id="toDo" placeholder="Todo">
+            <label for="todoDate">Deadline</label>
+            <input name="todoDate" id="todoDate" placeholder="date">
+            <button>Add Todo</button>
+            <form action="/list" method="GET">
+                <button>Todo lijst</button>
+            </form>
+        </div>
+    </form>
+
+    <div id="footer">&#169;Tony van Leeuwen 2020</div>
+</div>
+</body>
+</html>
